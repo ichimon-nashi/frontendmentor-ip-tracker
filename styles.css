@@ -61,19 +61,6 @@ h1 {
     color: initial;
 }
 
-.error {
-    display: none;
-    color: var(--red);
-    font-size: 0.8rem;
-}
-
-.error.show {
-    display: block;
-    padding-top: 0.5rem; 
-    margin-left: 5%;
-    transform: translateX(2%);
-}
-
 button {
     background-color: var(--very-dark-gray);
     color: var(--white);
@@ -211,9 +198,6 @@ footer a {
     #postal-output {
         display: block;
         padding: 0;
-    }
-    .error.show {
-        margin-left: 26%;
     }
     #map {
         height: 70vh;
