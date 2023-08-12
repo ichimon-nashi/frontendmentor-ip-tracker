@@ -126,6 +126,10 @@ i {
     font-size: 0.6rem;
 }
 
+.output-result {
+    font-weight: 700;
+}
+
 #postal-output {
     padding-left: 0.3rem;
 }
