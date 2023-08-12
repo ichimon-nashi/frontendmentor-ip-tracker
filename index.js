@@ -3,7 +3,6 @@
 const ipRegex = /^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$/;
 const submitBtn = document.getElementById("submit-btn");
 const rawIP = document.getElementById("input-ip");
-const error = document.querySelector(".error");
 const outputIP = document.getElementById("ip-address-output");
 const outputCity = document.getElementById("city-output");
 const outputState = document.getElementById("state-output");
@@ -60,12 +59,11 @@ submitBtn.addEventListener("click", (e)=> {
 
     if (ipRegex.test(userIP)) {
         rawIP.classList.remove("show");
-        error.classList.remove("show");
         console.log("Valid IP");
         addressLookup(userIP);
     } else {
         console.log("Invalid IP");
+        alert("Invalid IP Address")
         rawIP.classList.add("show");
-        error.classList.add("show");
     }
 })
